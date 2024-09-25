@@ -4,9 +4,7 @@ export default function LocationMarker() {
     const [selectedPosition, setSelectedPosition] = useState(null);
         useMapEvents({
           click(event) {
-            // Update the selected position state with the clicked coordinates
             setSelectedPosition(event.latlng);
-            // getLocation(event.latlng);
           },
         });
     

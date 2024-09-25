@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babylonjs/core": "^7.26.4",
+    "@babylonjs/loaders": "^7.26.4",
     "@react-google-maps/api": "^2.19.3",
     "@react-leaflet/core": "^2.1.0",
     "@testing-library/jest-dom": "^5.17.0",

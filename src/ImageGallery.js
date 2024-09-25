@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './ImageGallery.css'; // Import a CSS file for styles
-
+import './ImageGallery.css'; 
 const ImageGallery = () => {
   const [images, setImages] = useState([]);
   const { userId } = useParams();
