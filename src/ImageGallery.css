@@ -28,12 +28,9 @@
    */
 
   /* Gallery styling */
-.image-skeleton{
-
-}
 
 .card {
-  width: 252px;
+  width: 100%;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;

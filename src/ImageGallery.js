@@ -50,9 +50,11 @@ const ImageGallery = () => {
               <p>Latitude: {image.latitude}</p>
               <p>Longitude: {image.longitude}</p>
             </div>
+            
           ))
+          
         ) : (
-          <div style={{"display":"grid", "grid-auto-flow": "column"}}>
+          <div style={{"display":"grid", "gridAutoFlow": "column"}}>
             <Skeleton/>
             <Skeleton/>
             <Skeleton/>
