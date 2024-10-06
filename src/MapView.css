@@ -1,0 +1,24 @@
+/* src/components/MapView.css */
+
+.map-container {
+    height: 600px;
+    width: 100%;
+    margin: 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .loader, .error, .no-data {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    margin: 20px 0;
+  }
+  
+  .popup-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
