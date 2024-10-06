@@ -14,7 +14,7 @@ function MapComponent() {
   const [capturedImageUrl, setCapturedImageUrl] = useState(null);
   const [selectedPosition, setSelectedPosition] = useState(null);
 
-  const position = [20.5937, 78.9629];
+  const position = [10.8505, 76.2711];
 
   console.log('selectedPosition.....', selectedPosition);
 
@@ -62,12 +62,12 @@ function MapComponent() {
       {capturedImageUrl && <ImageD imageUrl={capturedImageUrl} />}
 
       {/* Wrap the MapContainer with a div that has the ref */}
-      <div ref={mapContainerRef} style={{ height: '400px', width: '80%' }}>
+      <div ref={mapContainerRef} style={{ height: '400px', width: '100%',  display: 'flex', justifyContent: 'center' }}>
         <MapContainer
           center={position} // Centering the map over India
           zoom={4.9}
           scrollWheelZoom={true}
-          style={{ height: '100%', width: '100%' }}
+          style={{ height: '100%', width: '80%' }}
         >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
