@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './ImageGallery.css'; 
+import '../styles/ImageGallery.css'; 
 import Skeleton from './SkeletonImage';
 
 const ImageGallery = () => {

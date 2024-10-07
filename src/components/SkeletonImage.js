@@ -1,4 +1,4 @@
-import './ImageGallery.css'; 
+import '../styles/ImageGallery.css'; 
 export default function Skeleton() {
     return (
         <div className="image-grid loading">

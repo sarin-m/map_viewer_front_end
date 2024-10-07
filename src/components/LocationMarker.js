@@ -1,7 +1,6 @@
 import { Marker, Popup,useMapEvents} from 'react-leaflet';
 import {Icon} from 'leaflet';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
-import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
 export default function LocationMarker({selectedPosition, setSelectedPosition}) {
   const DefaultIcon = new Icon({

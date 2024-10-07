@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import axios from 'axios';
 import {Icon} from 'leaflet';
-import './MapView.css'; // Optional: custom styles
+import '../styles/MapView.css'; // Optional: custom styles
 
 export default function ViewLiveMap () {
     const DefaultIcon = new Icon({
@@ -23,9 +23,7 @@ export default function ViewLiveMap () {
     const fetchMapData = async () => {
       try {
         const response = await axios.get(`http://127.0.0.1:3021/images/${userId}`);
-        console.log('response.images....', response.data.images);
         setMapData(response.data.images);
-        console.log('mapData...inside... useEffect....', mapDatas);
       } catch (err) {
         console.error('Error fetching map data:', err);
         setError(true);
@@ -47,7 +45,6 @@ export default function ViewLiveMap () {
   }
 
   // Determine the initial map center
-  console.log('mapData...',mapDatas)
   const initialPosition = [10.8505, 76.2711];
 
   return (

@@ -4,7 +4,7 @@ import LocationMarker from './LocationMarker';
 import L from 'leaflet';
 import axios from 'axios';
 import 'leaflet/dist/leaflet.css';
-import './App.css';
+import '../styles/App.css';
 import ImageD from './ImageD.js';
 import html2canvas from 'html2canvas';
 
