@@ -1,10 +1,10 @@
 import 'leaflet/dist/leaflet.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import MapComponent from './MapComponent';
-import ImageGallery from './ImageGallery';
-import ViewLiveMap from './ViewLiveMap';
-import './Header.css';
+import MapComponent from './components/MapComponent';
+import ImageGallery from './components/ImageGallery';
+import ViewLiveMap from './components/ViewLiveMap';
+import './styles/Header.css';
 
 function App() {
   return (
